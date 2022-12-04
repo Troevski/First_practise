@@ -85,13 +85,25 @@
 //     result += '\n';
 // }
 // console.log(result);
-first: for (let i=0 ; i<3 ; i++){
-        console.log(`first level:${i}`);
-         for (let j=0 ; j<3 ; j++){
-                console.log(`second level: ${j}`);
-            }
-                for (let k=0 ; k<5 ; k++){
-                    if(k===3) continue first ;
-                    console.log(`third level:${k}`);
-                }
-    }
+// first: for (let i=0 ; i<3 ; i++){
+//         console.log(`first level:${i}`);
+//          for (let j=0 ; j<3 ; j++){
+//                 console.log(`second level: ${j}`);
+//             }
+//                 for (let k=0 ; k<5 ; k++){
+//                     if(k===3) continue first ;
+//                     console.log(`third level:${k}`);
+//                 }
+//     }
+
+// let number = 50;
+// // while (number<55){
+// //     console.log(number);
+// //     number++;
+// // }
+// do {
+//     console.log(number)
+//     number++;
+// } 
+// while (number<=55);
+
