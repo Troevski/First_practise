@@ -322,49 +322,118 @@
 // console.log(parseFloat(num));  - используется , чтобы взять какое-то число или строку и вернуть его в десятичное значение 
 // / он не  округляет , будет 12.2
 
-let numberOfFilms ;
-function start (){
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?' ,'' );
+// let numberOfFilms ;
+// function start (){
+//     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?' ,'' );
 
-    while (numberOfFilms == '' || isNaN(numberOfFilms) || numberOfFilms == null){
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?' ,'' );
-    }
-}
-start();
-const personalMovieDB = {
-    count:numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat:false 
-};
+//     while (numberOfFilms == '' || isNaN(numberOfFilms) || numberOfFilms == null){
+//         numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели ?' ,'' );
+//     }
+// }
+// start();
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies:{},
+//     actors:{},
+//     genres:[],
+//     privat:false 
+// };
 
-function rememberMyFilms (){
-    for (let i = 0; i<2 ; i++){  
-        const a = prompt('Один из последних просмотренных фильмов?',''),  
-                b = prompt('На сколько оцените его?',''); 
-        if(a != null && b != null && a != '' && b != '' && a.length<50){   
-            personalMovieDB.movies[a] = b;
-            console.log("done"); 
-        } else {      
-            console.log("error"); 
-            i--;
-        }
-    }
-}
-rememberMyFilms ();
+// function rememberMyFilms (){
+//     for (let i = 0; i<2 ; i++){  
+//         const a = prompt('Один из последних просмотренных фильмов?','').trim(),  
+//                 b = prompt('На сколько оцените его?',''); 
+//         if(a != null && b != null && a != '' && b != '' && a.length<50){   
+//             personalMovieDB.movies[a] = b;
+//             console.log("done"); 
+//         } else {      
+//             console.log("error"); 
+//             i--;
+//         }
+//     }
+// }
+// rememberMyFilms ();
 
-function detectPersonalLevel (){
-    if (personalMovieDB.count < 10){
-        console.log('Просмотрено довольно мало фильмов');
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30){
-        console.log("Вы классический зритель");
-    }else if (personalMovieDB.count >= 30){
-        console.log("Вы киноман");
-    } else {
-        console.log("Произошла ошибка");
-    }; 
-    console.log(personalMovieDB); 
-}
-detectPersonalLevel ()
-console.log(personalMovieDB);
+// function detectPersonalLevel (){
+//     if (personalMovieDB.count < 10){
+//         console.log('Просмотрено довольно мало фильмов');
+//     } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30){
+//         console.log("Вы классический зритель");
+//     }else if (personalMovieDB.count >= 30){
+//         console.log("Вы киноман");
+//     } else {
+//         console.log("Произошла ошибка");
+//     }; 
+//     console.log(personalMovieDB); 
+// }
+// detectPersonalLevel ()
+
+// function showMyDB (hidden){
+//     if(!hidden){
+//         console.log(personalMovieDB); 
+//     }
+// }
+// showMyDB (personalMovieDB.privat);
+
+// function writeYourGenres (){
+//     for (let i = 1; i<=3 ; i++){  
+//        const genre = prompt(`Ваш любимый жанр под номером ${i}`);
+//        personalMovieDB.genres[i - 1] = genre ;
+//     }
+// }
+// writeYourGenres();
+
+// function learnJS(lang,callback){
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
+// function done (){
+//     console.log('Я прошёл этот урок!');
+// }
+// learnJS('JavaScript',done);  - вызвали callback done без () тк как мы ее передаём , а не вызываем. 
+
+// const objekt = {
+//     name:'Artem',
+//     height: 1024,
+//     width:1024,
+//     colors:{
+//         bg:"red",
+//         border: "blue"
+//     }
+// }
+// const {border} = objekt.colors;
+// console.log(border);
+// console.log(Object.keys(objekt));
+// let counter = 0;
+// for ( let key in objekt) {
+//     if (typeof(objekt[key]) === 'object'){
+//         for (let i in objekt[key]){
+//             console.log(`Свойство ${objekt[i]} имеет значение ${objekt[key][i]}`);
+//             counter++;
+//         }
+//     } else {
+//         console.log(`Свойство ${key} имеет значение ${objekt[key]}`);
+//         counter++;
+//     }
+// }
+// console.log(counter);
+
+// const arr = [1 ,2, 3, 4, 5]
+// arr[20] = 0;
+// console.log(arr.length);
+// console.log(arr);
+
+// const arr = [фывфы ,ыфвфыв, ывфыв]
+// arr.sort();
+// console.log(arr)
+
+// const arr = [1, 2, 3, 4, 5]
+// arr.forEach(function(item , i, arr){
+//     console.log(`${i}: ${item} находится в массиве ${arr}`)
+// })
+
+const str = prompt('', ''); 
+const products = str.split(', '); 
+products.sort();
+console.log(products.join('; '));
+
