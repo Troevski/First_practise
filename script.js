@@ -432,8 +432,100 @@
 //     console.log(`${i}: ${item} находится в массиве ${arr}`)
 // })
 
-const str = prompt('', ''); 
-const products = str.split(', '); 
-products.sort();
-console.log(products.join('; '));
+// const str = prompt('', ''); 
+// // const products = str.split(', '); 
+// products.sort();
+// console.log(products.join('; '));
 
+// const arr = [1 ,22, 8, 4, 5]
+// arr.sort(compareNum)
+// console.log(arr);
+// function compareNum(a, b){
+//     return a-b 
+// }
+
+// let a = 5,
+//     b = a ;
+// b = b + 5 ; 
+// console.log(a);
+// console.log(b);
+
+// const obj = {
+//     a: 5 , - глубокие
+//     b: 1  - глубокие
+//     c: {
+//         x:1,  - поверхностные объекты
+//         y:2
+//     }
+// };
+// const copy = obj;
+// copy.a = 10;
+// console.log(copy);
+// console.log(obj);
+
+// function copy (mainObj){
+//     let objcopy = {}; 
+//     for (let key in mainObj) {
+//         objcopy[key] = mainObj[key];
+//     }
+//     return objcopy;
+// }
+// const numbers ={
+//     a:2,
+//     b:5,
+//     c:{
+//         x:2,
+//         y:4
+//     }
+// }
+// const newNumbers = copy(numbers);
+// newNumbers.a = 12;
+// console.log(newNumbers);
+// console.log(numbers);
+
+
+// function copy (mainObject){
+//     let copyObject ={};
+//     for (let key in mainObject){
+//       copyObject[key] = mainObject[key];
+//     }
+//     return copyObject ;
+// }
+// const Numbers = {
+//     a:22,
+//     b:92,
+//     c: {
+//         x:2
+//     }
+// }
+// const newNumbers = copy(Numbers) ;
+// newNumbers.b = 22;
+// console.log(newNumbers);
+// console.log(Numbers);
+
+// const numbers ={
+//     a:2,
+//     b:5,
+//     c:{
+//         x:2,
+//         y:4
+//     }
+// }
+// const add = {
+//     d:2,
+//     e:2214
+// };
+// const clone = Object.assign({}, add)
+// clone.d = 19;
+// console.log(add);
+// console.log(clone);
+
+// const oldArr = [ 'a' ,'b', 'c']; - обычн массив
+// const newArr = oldArr.slice(); 
+// newArr[1]= 'asassaas'; - изменили второй элемент 
+// console.log(oldArr);
+// console.log(newArr);
+
+const video = [ 'youtube' ,'rutube' ];
+const blogg = [ 'shapik' ,'bogdanello'];
+const internet = [... video, ...blogg, 'vk','insta' ];
